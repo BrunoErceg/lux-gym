@@ -21,7 +21,7 @@ function Hero() {
 
       <Container>
         <Animated delay={0.4}>
-          <h1 className="font-gilory-bold mb-5 ml-[-5px] text-6xl leading-[0.8em] md:text-9xl lg:mb-9">
+          <h1>
             <Trans i18nKey="hero.title">
               Tvoja zona snage i <OutlineText>energije</OutlineText>
             </Trans>

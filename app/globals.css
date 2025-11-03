@@ -30,6 +30,9 @@
   body {
     @apply font-gilory selection:bg-primary text-dark overflow-x-hidden antialiased selection:text-white;
   }
+  h1 {
+    @apply font-gilory-bold mb-5 ml-[-5px] text-6xl leading-[0.8em] md:text-9xl lg:mb-9;
+  }
   h2 {
     @apply font-gilory-bold mb-18 text-5xl;
   }
