@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { cn } from "@utils/cn";
 import useHashtagsList from "@hooks/useHashtagsList";

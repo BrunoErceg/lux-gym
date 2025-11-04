@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 import PrivatniTrenerSlika from "@images/privatni-trener.jpg";
 import Accordion from "@ui/Accordion";
 import Section from "@layout/Section";
@@ -37,13 +38,15 @@ function PersonalTrainer() {
             />
           </Flex>
           <Animated>
-            <Flex justify="end" className="relative lg:ml-[15%]">
-              <img
+            <Flex justify="end" className="relative lg:ml-[20%]">
+              <Image
                 src={PrivatniTrenerSlika.src}
-                className="md:w-s w-full"
+                width={472}
+                height={611}
                 alt={t("personalTrainer.imgAlt")}
+                className="w-full"
               />
-              <div className="absolute bottom-5 flex w-full space-x-5 lg:right-10 lg:bottom-10">
+              <div className="absolute bottom-0 flex w-full space-x-5 lg:right-10 lg:bottom-10">
                 <InfoCard
                   title={t("personalTrainer.experience.title")}
                   countTo={godineIskustva}

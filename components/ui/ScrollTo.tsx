@@ -1,3 +1,4 @@
+"use client";
 import { scrollToSection } from "@utils/scrollToSection";
 
 function ScrollTo({
@@ -8,12 +9,12 @@ function ScrollTo({
   section: React.RefObject<HTMLElement>;
 }) {
   return (
-    <a
+    <button
       onClick={() => scrollToSection(section)}
       className="underline-animation relative text-xl"
     >
       {children}
-    </a>
+    </button>
   );
 }
 

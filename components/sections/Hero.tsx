@@ -1,6 +1,10 @@
+"use client";
+
 import { Trans, useTranslation } from "react-i18next";
 import { RefContext } from "@context/context";
 import { useContext, useEffect, useState } from "react";
+import background from "@images/teretana-privatni-trening.jpg";
+import Image from "next/image";
 import Container from "@layout/Container";
 import Flex from "@layout/Flex";
 import OutlineText from "@ui/OutlineText";
@@ -16,7 +20,14 @@ function Hero() {
   }, []);
 
   return (
-    <section className="text-light flex h-screen w-auto flex-col justify-between space-y-10 overflow-hidden bg-[url('@images/teretana-privatni-trening.jpg')] bg-cover bg-center">
+    <section className="text-light relative flex h-screen w-auto flex-col justify-between space-y-10 overflow-hidden">
+      <Image
+        alt=""
+        src={background.src}
+        fill
+        sizes="80vw"
+        className="object-cover relative z-[-1]"
+      />
       <Navigation />
 
       <Container>

@@ -1,8 +1,13 @@
+"use client";
+
 import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
 
 export default function useHashtagsList() {
   const { t } = useTranslation();
-  const currentYear = new Date().getFullYear();
+  const [shuffledHashtags, setShuffledHashtags] = useState<string[]>([]);
+
+  const currentYear = new Date().getFullYear().toString();
   const hashtags = [
     currentYear,
     "Šibenik",
@@ -18,5 +23,10 @@ export default function useHashtagsList() {
     t("hashtags.running"),
   ];
 
-  return [...hashtags].sort(() => Math.random() - 0.5);
+  useEffect(() => {
+    // Randomizacija se dešava samo na klijentu
+    setShuffledHashtags([...hashtags].sort(() => Math.random() - 0.5));
+  }, []);
+
+  return shuffledHashtags;
 }
