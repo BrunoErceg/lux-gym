@@ -1,6 +1,5 @@
 import { PhotoView } from "react-photo-view";
 import { cn } from "@utils/cn";
-import { easeInOut, motion } from "framer-motion";
 import Image from "next/image";
 type GaleryImgProps = {
   src: string;
@@ -21,7 +20,7 @@ function GaleryImg({ src, alt, className }: GaleryImgProps) {
         >
           <Image
             src={src}
-            className={`object-cover`}
+            className={`object-cover hover:scale-110 duration-200 ease-in-out`}
             fill
             sizes="80vw"
             alt={alt}

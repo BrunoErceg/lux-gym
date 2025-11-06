@@ -1,5 +1,9 @@
 "use client";
-
+import {
+  faGoogle,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { Trans, useTranslation } from "react-i18next";
 import { RefContext } from "@context/context";
 import { useContext, useEffect, useState } from "react";
@@ -9,8 +13,13 @@ import Container from "@layout/Container";
 import Flex from "@layout/Flex";
 import OutlineText from "@ui/OutlineText";
 import ArrowDown from "@ui/ArrowDown";
-import Animated from "@animations/Animate";
+import InViewAnimation from "@/components/animations/InViewAnimation";
 import Navigation from "@/components/sections/Navigation";
+import HeroLayout from "../layout/HeroLayout";
+import NavIcon from "../ui/NavIcon";
+import { SOCIAL_LINKS } from "@/utils/constants";
+import Stack from "../layout/Stack";
+
 function Hero() {
   const sectionRef = useContext(RefContext);
   const { t } = useTranslation();
@@ -20,25 +29,25 @@ function Hero() {
   }, []);
 
   return (
-    <section className="text-light relative flex h-screen w-auto flex-col justify-between space-y-10 overflow-hidden">
+    <HeroLayout>
       <Image
-        alt=""
+        alt={t("hero.imageAlt")}
         src={background.src}
         fill
-        sizes="80vw"
+        sizes="90vw"
         className="object-cover relative z-[-1]"
       />
       <Navigation />
 
       <Container>
-        <Animated delay={0.4}>
+        <InViewAnimation delay={0.4}>
           <h1>
             <Trans i18nKey="hero.title">
               Tvoja zona snage i <OutlineText>energije</OutlineText>
             </Trans>
           </h1>
-        </Animated>
-        <Animated delay={0.6}>
+        </InViewAnimation>
+        <InViewAnimation delay={0.6}>
           <p className="text-xl">
             <Trans i18nKey="hero.description">
               Vaša{" "}
@@ -46,18 +55,26 @@ function Hero() {
               teretana u Šibeniku
             </Trans>
           </p>
-        </Animated>
+        </InViewAnimation>
       </Container>
 
       <Container>
-        <Animated delay={0.9} direction="none">
+        <InViewAnimation delay={0.9} direction="none">
           <Flex justify="between" align="end" className="mb-6">
-            <p>{t("hero.workingHours")}</p>
+            <Stack>
+              <NavIcon link={SOCIAL_LINKS.instagram} icon={faInstagram} />
+              <NavIcon link={SOCIAL_LINKS.whatsapp} icon={faWhatsapp} />
+              <NavIcon
+                link={SOCIAL_LINKS.google}
+                icon={faGoogle}
+                className="scale-90"
+              />
+            </Stack>
             <ArrowDown sectionRef={sectionRef} />
           </Flex>{" "}
-        </Animated>
+        </InViewAnimation>
       </Container>
-    </section>
+    </HeroLayout>
   );
 }
 

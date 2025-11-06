@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
-type AnimatedProps = {
+type InViewAnimationProps = {
   children: ReactNode;
   direction?: "up" | "none";
   delay?: number; // in seconds
   margin?: "-100px" | "0px";
 };
 
-function Animated({
+function InViewAnimation({
   children,
   direction = "up",
   margin = "-100px",
   delay = 0,
-}: AnimatedProps) {
+}: InViewAnimationProps) {
   const initalObject = { opacity: 0, y: 0 };
   direction == "up" ? (initalObject.y = 20) : "";
 
@@ -32,4 +32,4 @@ function Animated({
   );
 }
 
-export default Animated;
+export default InViewAnimation;

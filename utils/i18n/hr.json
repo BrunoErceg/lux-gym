@@ -6,7 +6,15 @@
     "priceList": "Cjenik"
   },
 
+  "cookies": {
+    "title": "Želite li kolačić?",
+    "description": "Cijenimo vašu privatnost. Osnovni kolačići su uvijek omogućeni jer su neophodni za pravilno funkcioniranje web stranice.",
+    "accept": "Prihvati sve",
+    "reject": "Odbij sve"
+  },
+
   "hero": {
+    "imageAlt": "Privatni trener pokazuje vježbu",
     "title": "Tvoja zona <br> snage i <1>energije<1>",
     "description": "Vaša  <2>omiljena</2> teretana u Šibeniku",
     "workingHours": "Pon-Ned 07-22h"
@@ -136,5 +144,10 @@
       "description": "Svaki dan od 07 do 22h"
     },
     "rights": "Sva prava pridržana."
+  },
+
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "link": "Idi nazad!"
   }
 }

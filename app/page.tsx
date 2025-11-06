@@ -1,5 +1,4 @@
 "use client";
-import { useEffect } from "react";
 import { RefContext } from "@context/context.tsx";
 import PriceList from "@/components/sections/PriceList";
 import CookiesProvider from "@/components/sections/CookiesProvider";
@@ -11,10 +10,6 @@ import PersonalTrainer from "@/components/sections/PersonalTrainer";
 import Gym from "@/components/sections/Gym";
 
 function Homepage() {
-  useEffect(() => {
-    document.title = "Lux Gym Šibenik - Najbolja teretana u gradu";
-  }, []);
-
   const refSections = {};
   return (
     <CookiesProvider>

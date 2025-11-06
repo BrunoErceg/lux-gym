@@ -23,6 +23,7 @@
       "@/*": ["./*"],
       "@components/*": ["./components/*"],
       "@ui/*": ["./components/ui/*"],
+      "@seo/*": ["./components/seo/*"],
       "@layout/*": ["./components/layout/*"],
       "@sections/*": ["./components/sections/*"],
       "@animations/*": ["./components/animations/*"],

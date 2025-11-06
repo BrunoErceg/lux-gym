@@ -7,7 +7,7 @@ import Container from "@layout/Container";
 import Columns from "@layout/Columns";
 import Flex from "@layout/Flex";
 import getExperience from "@utils/experience";
-import Animated from "@animations/Animate";
+import InViewAnimation from "@/components/animations/InViewAnimation";
 import InfoCard from "@ui/InfoCard";
 
 function PersonalTrainer() {
@@ -37,7 +37,7 @@ function PersonalTrainer() {
               content={t("personalTrainer.group.description")}
             />
           </Flex>
-          <Animated>
+          <InViewAnimation>
             <Flex justify="end" className="relative lg:ml-[20%]">
               <Image
                 src={PrivatniTrenerSlika.src}
@@ -60,7 +60,7 @@ function PersonalTrainer() {
                 />
               </div>
             </Flex>
-          </Animated>
+          </InViewAnimation>
         </Columns>
       </Container>
     </Section>

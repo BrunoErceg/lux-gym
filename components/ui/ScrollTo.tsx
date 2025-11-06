@@ -1,13 +1,12 @@
 "use client";
 import { scrollToSection } from "@utils/scrollToSection";
 
-function ScrollTo({
-  children,
-  section,
-}: {
+type ScrollToProps = {
   children: string;
   section: React.RefObject<HTMLElement>;
-}) {
+};
+
+function ScrollTo({ children, section }: ScrollToProps) {
   return (
     <button
       onClick={() => scrollToSection(section)}

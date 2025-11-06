@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Animated from "@animations/Animate";
+import Animated from "@/components/animations/InViewAnimation";
 
 type CardProps = {
   title?: string;

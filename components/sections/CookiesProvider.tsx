@@ -1,5 +1,7 @@
 import { CookieManager } from "react-cookie-manager";
+import { useTranslation } from "react-i18next";
 function CookiesProvider({ children }: { children: React.ReactNode }) {
+  const { t } = useTranslation();
   return (
     <CookieManager
       cookieKitId="68f0e4971bbc36d40feb9dfe"
@@ -10,11 +12,10 @@ function CookiesProvider({ children }: { children: React.ReactNode }) {
         declineButton: "cookie-button",
       }}
       translations={{
-        title: "Želite li kolačić? 🍪",
-        message:
-          "Cijenimo vašu privatnost. Osnovni kolačići su uvijek omogućeni jer su neophodni za pravilno funkcioniranje web stranice.",
-        buttonText: "Prihvati sve",
-        declineButtonText: "Odbij sve",
+        title: t("cookies.title"),
+        message: t("cookies.description"),
+        buttonText: t("cookies.accept"),
+        declineButtonText: t("cookies.reject"),
       }}
       showManageButton={false}
       displayType="popup"

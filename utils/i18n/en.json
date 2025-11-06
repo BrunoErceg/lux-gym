@@ -6,7 +6,15 @@
     "priceList": "Price List"
   },
 
+  "cookies": {
+    "title": "Do you want a cookie?",
+    "description": "We value your privacy. Essential cookies are always enabled because they are necessary for the website to function properly.",
+    "accept": "Accept all",
+    "reject": "Reject all"
+  },
+
   "hero": {
+    "imageAlt": "A personal trainer demonstrates an exercise",
     "title": "Zone of  <1>strength</1> <br> and energy",
     "description": "Your <2>favorite</2> gym in Šibenik",
     "workingHours": "Mon-Sun 07-22h"
@@ -135,5 +143,9 @@
       "description": "Every day from 07:00 to 22:00"
     },
     "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not Found",
+    "link": "Go Back!"
   }
 }

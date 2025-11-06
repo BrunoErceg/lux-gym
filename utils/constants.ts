@@ -9,6 +9,6 @@ export const SOCIAL_LINKS = {
 export const INFO = {
   address: "Morinjski put 51, Šibenik, Ražine",
   phone: "+385 95 829 9154",
-  email: "luxgym@sibenik.com",
+  email: "luka.skubonja@outlook.com",
   instagram: "@lux_gym_sibenik",
 };
