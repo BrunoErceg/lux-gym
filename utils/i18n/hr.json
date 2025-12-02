@@ -17,7 +17,7 @@
     "imageAlt": "Privatni trener pokazuje vježbu",
     "title": "Tvoja zona <br> snage i <1>energije<1>",
     "description": "Vaša  <2>omiljena</2> teretana u Šibeniku",
-    "workingHours": "Pon-Ned 07-22h"
+    "workingHours": "Pon-Sub 07-22h"
   },
 
   "gym": {
@@ -26,7 +26,7 @@
 
     "openingHours": {
       "title": "Radno Vrijeme",
-      "description": "Teretana je otvorena od ponediljak do nedilje, od 07 do 22 sata"
+      "description": "Teretana je otvorena od ponediljak do subote, od 07 do 22 sata"
     },
     "equipment": {
       "title": "Vrhunska Oprema",
@@ -141,7 +141,7 @@
     "address": "Adresa",
     "openingHours": {
       "title": "Radno Vrijeme",
-      "description": "Svaki dan od 07 do 22h"
+      "description": "Od ponediljak do subote, od 07 do 22 sata"
     },
     "rights": "Sva prava pridržana."
   },

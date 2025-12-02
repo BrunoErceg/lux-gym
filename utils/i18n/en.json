@@ -17,7 +17,7 @@
     "imageAlt": "A personal trainer demonstrates an exercise",
     "title": "Zone of  <1>strength</1> <br> and energy",
     "description": "Your <2>favorite</2> gym in Šibenik",
-    "workingHours": "Mon-Sun 07-22h"
+    "workingHours": "Mon-Sat 07-22h"
   },
 
   "gym": {
@@ -26,7 +26,7 @@
 
     "openingHours": {
       "title": "Opening Hours",
-      "description": "The gym is open Monday through Sunday, 7 a.m. to 10 p.m."
+      "description": "The gym is open Monday through Saturday, 7 a.m. to 10 p.m."
     },
     "equipment": {
       "title": "Top Equipment",
@@ -140,7 +140,7 @@
     "address": "Address",
     "openingHours": {
       "title": "Working Time",
-      "description": "Every day from 07:00 to 22:00"
+      "description": "Monday through Saturday, 7 a.m. to 10 p.m."
     },
     "rights": "All rights reserved."
   },
