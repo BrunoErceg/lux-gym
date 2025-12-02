@@ -28,7 +28,7 @@ function NotFound() {
             <OutlineText>404</OutlineText>
           </h1>
           <h3>Stranica nije pronađena</h3>
-          <Link href="/" className="text-2xl underline-animation">
+          <Link href="/" className="text-xl underline-animation">
             Vrati se na početnu
           </Link>
         </Container>

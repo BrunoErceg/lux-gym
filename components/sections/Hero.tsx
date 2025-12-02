@@ -41,14 +41,14 @@ function Hero() {
 
       <Container>
         <InViewAnimation delay={0.4}>
-          <h1>
+          <h1 className="mt-15">
             <Trans i18nKey="hero.title">
               Tvoja zona snage i <OutlineText>energije</OutlineText>
             </Trans>
           </h1>
         </InViewAnimation>
         <InViewAnimation delay={0.6}>
-          <p className="text-xl">
+          <p className="text-md md:text-xl">
             <Trans i18nKey="hero.description">
               Vaša{" "}
               <span className="decoration-primary underline">omiljena</span>{" "}
@@ -60,7 +60,7 @@ function Hero() {
 
       <Container>
         <InViewAnimation delay={0.9} direction="none">
-          <Flex justify="between" align="end" className="mb-6">
+          <Flex justify="between" align="end">
             <Stack>
               <NavIcon link={SOCIAL_LINKS.instagram} icon={faInstagram} />
               <NavIcon link={SOCIAL_LINKS.whatsapp} icon={faWhatsapp} />

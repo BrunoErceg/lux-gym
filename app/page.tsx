@@ -8,6 +8,8 @@ import Hashtags from "@/components/sections/Hashtags";
 import Hero from "@/components/sections/Hero";
 import PersonalTrainer from "@/components/sections/PersonalTrainer";
 import Gym from "@/components/sections/Gym";
+import InViewAnimation from "@/components/animations/InViewAnimation";
+import { delay, motion } from "framer-motion";
 
 function Homepage() {
   const refSections = {};

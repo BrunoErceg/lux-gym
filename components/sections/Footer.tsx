@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="text-light-dark bg-[#141414] pt-16 text-lg">
       <Container>
-        <Columns sm={1} md={2} lg={4} gap="sm">
+        <Columns sm={1} md={2} lg={4} gap="md">
           <div>
             <p className="font-gilory-bold mb-4 text-4xl text-white">LUX GYM</p>
             <p>

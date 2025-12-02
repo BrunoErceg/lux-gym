@@ -25,7 +25,7 @@ function Gym() {
           </h2>
         </TextGroup>
 
-        <Columns sm={1} md={2} lg={4} gap="md">
+        <Columns sm={1} md={2} lg={4} gap="lg">
           <Card
             title={t("gym.openingHours.title")}
             description={t("gym.openingHours.description")}

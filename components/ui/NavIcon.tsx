@@ -13,7 +13,7 @@ function NavIcon({ icon, link, className }: NavIconProps) {
       <FontAwesomeIcon
         icon={icon}
         className={cn(
-          `hover:text-primary text-2xl transition-colors duration-200 hover:cursor-pointer`,
+          `hover:text-primary text-lg md:text-2xl transition-colors duration-200 hover:cursor-pointer`,
           className
         )}
       />

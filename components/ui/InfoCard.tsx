@@ -27,7 +27,7 @@ function InfoCard({
       <h3 className="m-0 md:text-6xl">
         <CountingAnimation countTo={countTo} duration={duration} />+
       </h3>
-      <p className="md:text-xl">{description}</p>
+      <p className="text-xs md:text-xl">{description}</p>
     </div>
   );
 }

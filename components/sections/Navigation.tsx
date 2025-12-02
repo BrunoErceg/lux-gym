@@ -17,7 +17,7 @@ function Navigation() {
       <Container>
         <Flex justify="between" align="center">
           {/* -- Logo -- */}
-          <p className="font-gilory-bold text-3xl">LUX GYM</p>
+          <p className="font-gilory-bold text-xl md:text-3xl">LUX GYM</p>
 
           {/* -- Scroll Navigation -- */}
           <Stack gap="lg" className="hidden lg:flex">

@@ -10,17 +10,19 @@ function GaleryImg({ src, alt, className }: GaleryImgProps) {
   return (
     <div
       className={cn(
-        "relative col-span-1 row-span-1 object-cover hover:cursor-pointer",
+        "relative col-span-1 h-full row-span-1 object-cover hover:cursor-pointer",
         className
       )}
     >
       <PhotoView src={src}>
         <div
-          className={`relative h-70 md:h-100 md: w-full overflow-hidden object-cover`}
+          className={`relative h-70 lg:h-full md: w-full 
+            overflow-hidden object-cover`}
         >
           <Image
             src={src}
-            className={`object-cover hover:scale-110 duration-200 ease-in-out`}
+            className={`object-cover  
+               hover:scale-110 duration-200 ease-in-out`}
             fill
             sizes="80vw"
             alt={alt}
