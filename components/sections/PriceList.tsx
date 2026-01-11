@@ -1,12 +1,51 @@
+// i18
 import { useTranslation } from 'react-i18next';
-import Usluga from '@ui/Usluga';
+
+// Components
 import Section from '@layout/Section';
 import Container from '@layout/Container';
 import TextGroup from '@layout/TextGroup';
 import Columns from '@layout/Columns';
+import Usluga from '@ui/Usluga';
 import Heading from '@ui/Heading';
-import Typography from '../ui/Typography';
+import Typography from '@ui/Typography';
 
+const SERVICES = [
+  {
+    service: 'membership',
+    price: 50,
+  },
+  {
+    service: 'familyMembership',
+    price: 40,
+  },
+  {
+    service: 'weekMembership',
+    price: 30,
+  },
+  {
+    service: 'workout',
+    price: 10,
+  },
+  {
+    service: 'privateWorkout',
+    price: 25,
+  },
+  {
+    service: 'workoutsPacket',
+    price: 300,
+  },
+  {
+    service: 'workoutsPacketFor2',
+    price: 450,
+  },
+];
+
+/**
+ * PriceList component, displays information about the prices of services.
+ *
+ * @returns Section component with information about the prices of services.
+ */
 function PriceList() {
   const { t } = useTranslation();
   return (
@@ -20,43 +59,24 @@ function PriceList() {
         </TextGroup>
         <Columns sm={1} md={2} lg={2} className="gap-0 md:gap-8">
           <div>
-            <Usluga
-              usluga={t('priceList.membership.title')}
-              opis={t('priceList.membership.description')}
-              cijena={50}
-            />
-            <Usluga
-              usluga={t('priceList.familyMembership.title')}
-              opis={t('priceList.familyMembership.description')}
-              cijena={40}
-            />
-            <Usluga
-              usluga={t('priceList.weekMembership.title')}
-              opis={t('priceList.weekMembership.description')}
-              cijena={30}
-            />
-            <Usluga
-              usluga={t('priceList.workout.title')}
-              opis={t('priceList.workout.description')}
-              cijena={10}
-            />
+            {SERVICES.slice(0, 4).map(({ service, price }) => (
+              <Usluga
+                key={service}
+                usluga={t(`priceList.${service}.title`)}
+                opis={t(`priceList.${service}.description`)}
+                cijena={price}
+              />
+            ))}
           </div>
           <div>
-            <Usluga
-              usluga={t('priceList.privateWorkout.title')}
-              opis={t('priceList.privateWorkout.description')}
-              cijena={25}
-            />
-            <Usluga
-              usluga={t('priceList.workoutsPacket.title')}
-              opis={t('priceList.workoutsPacket.description')}
-              cijena={300}
-            />
-            <Usluga
-              usluga={t('priceList.workoutsPacketFor2.title')}
-              opis={t('priceList.workoutsPacketFor2.description')}
-              cijena={450}
-            />
+            {SERVICES.slice(4).map(({ service, price }) => (
+              <Usluga
+                key={service}
+                usluga={t(`priceList.${service}.title`)}
+                opis={t(`priceList.${service}.description`)}
+                cijena={price}
+              />
+            ))}
           </div>
         </Columns>
       </Container>
