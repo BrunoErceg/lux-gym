@@ -1,28 +1,36 @@
-"use client";
+'use client';
 
 // React
-import { RefContext } from "@context/context";
-import { useContext, useEffect, useState } from "react";
-import Image from "next/image";
-// i18
-import { Trans, useTranslation } from "react-i18next";
+import { RefContext } from '@context/context';
+import { useContext, useEffect, useState } from 'react';
+import Image from 'next/image';
 
+// i18
+import { Trans, useTranslation } from 'react-i18next';
 // Icons & images
-import { faGoogle, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import background from "@images/teretana-privatni-trening.jpg";
+
+import { faGoogle, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import background from '@images/teretana-privatni-trening.jpg';
 
 // Constants
-import { SOCIAL_LINKS } from "@/utils/constants";
-// Components
-import Stack from "@layout/Stack";
-import Navigation from "@layout/Navigation";
-import Container from "@layout/Container";
-import Flex from "@layout/Flex";
-import OutlineText from "@ui/OutlineText";
-import ArrowDown from "@ui/ArrowDown";
-import NavIcon from "@ui/NavIcon";
-import InViewAnimation from "@/components/animations/InViewAnimation";
+import { SOCIAL_LINKS } from '@/utils/constants';
 
+// Components
+import Stack from '@layout/Stack';
+import Navigation from '@layout/Navigation';
+import Container from '@layout/Container';
+import Flex from '@layout/Flex';
+import OutlineText from '@ui/OutlineText';
+import ArrowDown from '@ui/ArrowDown';
+import NavIcon from '@ui/NavIcon';
+import InViewAnimation from '@/components/animations/InViewAnimation';
+import Heading from '../ui/Heading';
+
+/**
+ * Hero component, displays hero section with background image, navigation and social links.
+ *
+ * @returns {JSX.Element} Hero component.
+ */
 function Hero() {
   const sectionRef = useContext(RefContext);
   const { t } = useTranslation();
@@ -32,22 +40,29 @@ function Hero() {
   }, []);
 
   return (
-    <section className="text-light relative flex h-170 md:h-screen w-screen flex-col justify-between py-8 overflow-hidden">
-      <Image alt={t("hero.imageAlt")} src={background.src} fill sizes="90vw" className="object-cover relative z-[-1]" />
+    <section className="text-light relative flex h-170 w-screen flex-col justify-between overflow-hidden py-8 md:h-screen">
+      <Image
+        alt={t('hero.imageAlt')}
+        src={background.src}
+        fill
+        sizes="90vw"
+        className="relative z-[-1] object-cover"
+      />
       <Navigation />
 
       <Container>
         <InViewAnimation delay={0.4}>
-          <h1 className="mt-15">
+          <Heading level={1} className="mt-15">
             <Trans i18nKey="hero.title">
               Tvoja zona snage i <OutlineText>energije</OutlineText>
             </Trans>
-          </h1>
+          </Heading>
         </InViewAnimation>
         <InViewAnimation delay={0.6}>
           <p className="text-md md:text-xl">
             <Trans i18nKey="hero.description">
-              Vaša <span className="decoration-primary underline">omiljena</span> teretana u Šibeniku
+              Vaša <span className="decoration-primary underline">omiljena</span> teretana u
+              Šibeniku
             </Trans>
           </p>
         </InViewAnimation>
@@ -62,7 +77,7 @@ function Hero() {
               <NavIcon link={SOCIAL_LINKS.google} icon={faGoogle} className="scale-90" />
             </Stack>
             <ArrowDown sectionRef={sectionRef} />
-          </Flex>{" "}
+          </Flex>{' '}
         </InViewAnimation>
       </Container>
     </section>
