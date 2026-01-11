@@ -11,7 +11,6 @@ import Atmosfera from '@icons/atmosfera.png';
 
 // Components
 import Section from '@layout/Section';
-import Container from '@layout/Container';
 import TextGroup from '@layout/TextGroup';
 import Columns from '@layout/Columns';
 import Card from '@ui/Card';
@@ -48,7 +47,7 @@ function Gym() {
 
   return (
     <Section padding="lg" id="gym">
-      <Container>
+      <div className="container">
         <TextGroup>
           <Typography variant="support" className="text-center md:text-left">
             {t('gym.subtitle')}
@@ -71,7 +70,7 @@ function Gym() {
             );
           })}
         </Columns>
-      </Container>
+      </div>
     </Section>
   );
 }
