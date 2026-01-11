@@ -1,9 +1,5 @@
 "use client";
-import {
-  faGoogle,
-  faInstagram,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGoogle, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Trans, useTranslation } from "react-i18next";
 import { RefContext } from "@context/context";
 import { useContext, useEffect, useState } from "react";
@@ -14,7 +10,7 @@ import Flex from "@layout/Flex";
 import OutlineText from "@ui/OutlineText";
 import ArrowDown from "@ui/ArrowDown";
 import InViewAnimation from "@/components/animations/InViewAnimation";
-import Navigation from "@/components/sections/Navigation";
+import Navigation from "@layout/Navigation";
 import HeroLayout from "../layout/HeroLayout";
 import NavIcon from "../ui/NavIcon";
 import { SOCIAL_LINKS } from "@/utils/constants";
@@ -30,13 +26,7 @@ function Hero() {
 
   return (
     <HeroLayout>
-      <Image
-        alt={t("hero.imageAlt")}
-        src={background.src}
-        fill
-        sizes="90vw"
-        className="object-cover relative z-[-1]"
-      />
+      <Image alt={t("hero.imageAlt")} src={background.src} fill sizes="90vw" className="object-cover relative z-[-1]" />
       <Navigation />
 
       <Container>
@@ -50,9 +40,7 @@ function Hero() {
         <InViewAnimation delay={0.6}>
           <p className="text-md md:text-xl">
             <Trans i18nKey="hero.description">
-              Vaša{" "}
-              <span className="decoration-primary underline">omiljena</span>{" "}
-              teretana u Šibeniku
+              Vaša <span className="decoration-primary underline">omiljena</span> teretana u Šibeniku
             </Trans>
           </p>
         </InViewAnimation>
@@ -64,11 +52,7 @@ function Hero() {
             <Stack>
               <NavIcon link={SOCIAL_LINKS.instagram} icon={faInstagram} />
               <NavIcon link={SOCIAL_LINKS.whatsapp} icon={faWhatsapp} />
-              <NavIcon
-                link={SOCIAL_LINKS.google}
-                icon={faGoogle}
-                className="scale-90"
-              />
+              <NavIcon link={SOCIAL_LINKS.google} icon={faGoogle} className="scale-90" />
             </Stack>
             <ArrowDown sectionRef={sectionRef} />
           </Flex>{" "}
