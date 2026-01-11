@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Heading from '@ui/Heading';
+import Typography from './Typography';
 
 type AccordionProps = {
   title: string;
@@ -25,7 +26,7 @@ function Accordion({ title, content }: AccordionProps) {
         className={`grid overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
       >
         <div className="mb-3 overflow-hidden">
-          <p className="text-light-dark">{content}</p>
+          <Typography>{content}</Typography>
         </div>
       </div>
       <hr className="text-light" />

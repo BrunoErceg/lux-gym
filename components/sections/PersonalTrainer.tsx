@@ -10,6 +10,7 @@ import getExperience from '@utils/experience';
 import InViewAnimation from '@/components/animations/InViewAnimation';
 import InfoCard from '@ui/InfoCard';
 import Heading from '@ui/Heading';
+import Typography from '../ui/Typography';
 
 function PersonalTrainer() {
   const { godineIskustva, brojKlijenata } = getExperience();
@@ -19,7 +20,7 @@ function PersonalTrainer() {
       <Container>
         <Columns sm={1} md={1} lg={2} gap="md">
           <Flex direction="col" justify="center" className="justify-center">
-            <h5>Luka Škubonja</h5>
+            <Typography variant="support">Luka Škubonja</Typography>
             <Heading level={2} className="-translate-x-0.5">
               {t('personalTrainer.title')}
             </Heading>

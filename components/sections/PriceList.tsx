@@ -5,6 +5,7 @@ import Container from '@layout/Container';
 import TextGroup from '@layout/TextGroup';
 import Columns from '@layout/Columns';
 import Heading from '@ui/Heading';
+import Typography from '../ui/Typography';
 
 function PriceList() {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ function PriceList() {
     <Section id="priceList">
       <Container>
         <TextGroup centered={true}>
-          <h5 className="text-center">{t('priceList.subtitle')}</h5>
+          <Typography variant="support">{t('priceList.subtitle')}</Typography>
           <Heading level={2} className="mb-20 translate-x-0.5 md:text-center">
             {t('priceList.title')}
           </Heading>

@@ -4,7 +4,7 @@ import { HTMLAttributes, ReactNode } from 'react';
 
 type HeadingProps = VariantProps<typeof HeadingVariants> &
   HTMLAttributes<HTMLHeadingElement> & {
-    level: 1 | 2 | 3 | 4 | 5;
+    level: 1 | 2 | 3 | 4;
     white?: boolean;
     footer?: boolean;
     className?: string;
@@ -14,11 +14,10 @@ type HeadingProps = VariantProps<typeof HeadingVariants> &
 const HeadingVariants = cva('font-gilory-bold text-center md:text-left', {
   variants: {
     level: {
-      1: 'mb-3 ml-[-5px] text-4xl leading-[0.8] md:mb-5 md:text-left md:text-8xl lg:mb-8 lg:text-9xl',
+      1: 'mb-3 ml-[-5px] text-left text-[2.7rem] leading-[0.8] md:mb-5 md:text-8xl lg:mb-8 lg:text-9xl',
       2: 'mb-10 text-2xl md:mb-18 md:text-5xl',
       3: 'mb-2 text-2xl md:mb-3 md:text-3xl',
       4: 'mb-3 text-xl md:text-2xl',
-      5: 'mb-2 text-sm tracking-widest md:mb-4 md:text-base',
     },
 
     white: {

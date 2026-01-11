@@ -1,9 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @font-face {
   font-family: Gilory-Semibold;
   src:
-    url("../styles/fonts/Gilroy-SemiBold.woff") format("woff"),
-    url("../styles/fonts/Gilroy-SemiBold.woff2") format("woff2");
+    url('../styles/fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('../styles/fonts/Gilroy-SemiBold.woff2') format('woff2');
   font-weight: semibold;
   font-style: normal;
 }
@@ -11,15 +11,15 @@
 @font-face {
   font-family: Gilory-Bold;
   src:
-    url("../styles/fonts/Gilroy-Bold.woff") format("woff"),
-    url("../styles/fonts/Gilroy-Bold.woff2") format("woff2");
+    url('../styles/fonts/Gilroy-Bold.woff') format('woff'),
+    url('../styles/fonts/Gilroy-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @theme {
-  --font-gilory: "Gilory-Semibold", sans-serif;
-  --font-gilory-bold: "Gilory-bold", sans-serif;
+  --font-gilory: 'Gilory-Semibold', sans-serif;
+  --font-gilory-bold: 'Gilory-bold', sans-serif;
   --color-primary: #dd0303;
   --color-light: #e1e1e1;
   --color-dark: #2f3031;
@@ -31,22 +31,7 @@
     @apply w-screen overflow-x-hidden;
   }
   body {
-    @apply font-gilory selection:bg-primary w-screen text-dark overflow-x-hidden antialiased selection:text-white;
-  }
-  h1 {
-    @apply font-gilory-bold mb-3 md:mb-5 ml-[-5px] text-4xl md:text-8xl lg:text-9xl leading-[0.8em] lg:mb-8;
-  }
-  h2 {
-    @apply text-center md:text-left font-gilory-bold mb-10 md:mb-18 text-2xl  md:text-5xl;
-  }
-  h3 {
-    @apply text-center md:text-left font-gilory-bold mb-2 md:mb-3 text-2xl md:text-3xl;
-  }
-  h4 {
-    @apply text-center md:text-left font-gilory-bold mb-3 text-xl md:text-2xl;
-  }
-  h5 {
-    @apply text-center md:text-left font-gilory-bold mb-2 md:mb-4 text-sm md:text-base tracking-widest;
+    @apply font-gilory selection:bg-primary text-dark w-screen overflow-x-hidden antialiased selection:text-white;
   }
 }
 
@@ -64,7 +49,7 @@
   }
 
   .underline-animation::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -0.125rem;
@@ -88,11 +73,7 @@
   }
 
   .dotted-line {
-    background-image: linear-gradient(
-      to right,
-      rgb(169, 169, 169) 20%,
-      rgba(255, 255, 255, 0) 0%
-    );
+    background-image: linear-gradient(to right, rgb(169, 169, 169) 20%, rgba(255, 255, 255, 0) 0%);
     background-position: left;
     background-size: 10px 2px;
     background-repeat: repeat-x;

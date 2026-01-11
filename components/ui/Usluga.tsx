@@ -1,6 +1,7 @@
 import InViewAnimation from '@/components/animations/InViewAnimation';
 import Stack from '@layout/Stack';
 import Heading from '@ui/Heading';
+import Typography from './Typography';
 
 type CijenaProps = {
   usluga: string;
@@ -15,8 +16,8 @@ function Cijena({ usluga, opis, cijena }: CijenaProps) {
         <Heading level={4} className="text-left">
           {usluga}
         </Heading>
-        <p className="text-light-dark font-gilory-bold text-md">{opis}</p>
-        <p className="text-primary absolute right-0 text-2xl">€{cijena}</p>
+        <Typography>{opis}</Typography>
+        <Typography variant="price">€{cijena}</Typography>
         <div className="dotted-line absolute bottom-0 mb-8 h-1 w-full"></div>
       </Stack>
     </InViewAnimation>

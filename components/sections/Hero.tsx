@@ -25,6 +25,7 @@ import ArrowDown from '@ui/ArrowDown';
 import NavIcon from '@ui/NavIcon';
 import InViewAnimation from '@/components/animations/InViewAnimation';
 import Heading from '../ui/Heading';
+import Typography from '../ui/Typography';
 
 /**
  * Hero component, displays hero section with background image, navigation and social links.
@@ -59,12 +60,12 @@ function Hero() {
           </Heading>
         </InViewAnimation>
         <InViewAnimation delay={0.6}>
-          <p className="text-md md:text-xl">
+          <Typography variant="subheading">
             <Trans i18nKey="hero.description">
               Vaša <span className="decoration-primary underline">omiljena</span> teretana u
               Šibeniku
             </Trans>
-          </p>
+          </Typography>
         </InViewAnimation>
       </Container>
 

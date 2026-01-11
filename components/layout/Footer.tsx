@@ -5,6 +5,7 @@ import Container from '@layout/Container';
 import Stack from '@layout/Stack';
 import Link from '@ui/Link';
 import Heading from '@ui/Heading';
+import Typography from '../ui/Typography';
 
 function Footer() {
   const { t } = useTranslation();
@@ -14,27 +15,25 @@ function Footer() {
         <Columns sm={1} md={2} lg={4} gap="lg">
           <div>
             <p className="font-gilory-bold mb-4 text-2xl text-white md:text-4xl">LUX GYM</p>
-            <p>
-              {t('footer.learnMore')}
-              <br />
+            <Typography variant="footer">
+              {t('footer.learnMore')} <br />
               <Link link={SOCIAL_LINKS.sibenikIn}>Šibenik in</Link>
-            </p>
+            </Typography>
           </div>
 
           <div>
             <Heading level={4} footer>
               {t('footer.contact')}
             </Heading>
-            <h4 className="text-left text-white"></h4>
             <Stack direction="col" gap="sm">
-              <p>
+              <Typography variant="footer">
                 {t('footer.number')}
-                <Link link={SOCIAL_LINKS.whatsapp}> {INFO.phone}</Link>
-              </p>
-              <p>Email: {INFO.email}</p>
-              <p>
+                <Link link={SOCIAL_LINKS.whatsapp}>{INFO.phone}</Link>
+              </Typography>
+              <Typography variant="footer">Email: {INFO.email}</Typography>
+              <Typography variant="footer">
                 Instagram: <Link link={SOCIAL_LINKS.instagram}>{INFO.instagram}</Link>
-              </p>
+              </Typography>
             </Stack>
           </div>
           <div>
@@ -48,14 +47,14 @@ function Footer() {
             <Heading level={4} footer>
               {t('footer.openingHours.title')}
             </Heading>
-            <a>{t('footer.openingHours.description')}</a>
+            <Typography variant="footer">{t('footer.openingHours.description')}</Typography>
           </div>
         </Columns>
       </Container>
       <div className="mt-18 bg-[#1c1c1c] py-4">
-        <p className="text-center text-sm">
+        <Typography variant="copyright">
           LuxGym © {new Date().getFullYear() + '. ' + t('footer.rights')}
-        </p>
+        </Typography>
       </div>
     </footer>
   );

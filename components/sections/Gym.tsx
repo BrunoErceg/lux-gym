@@ -11,6 +11,7 @@ import TextGroup from '@layout/TextGroup';
 import Columns from '@layout/Columns';
 import Card from '@ui/Card';
 import Heading from '@ui/Heading';
+import Typography from '../ui/Typography';
 
 function Gym() {
   const { t } = useTranslation();
@@ -19,7 +20,9 @@ function Gym() {
     <Section padding="lg" id="gym">
       <Container>
         <TextGroup>
-          <h5>{t('gym.subtitle')}</h5>
+          <Typography variant="support" className="text-center md:text-left">
+            {t('gym.subtitle')}
+          </Typography>
 
           <Heading level={2}>
             {t('gym.title')} <FontAwesomeIcon icon={faHeart} className="text-primary size-7" />
