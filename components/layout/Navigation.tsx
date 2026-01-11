@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import '@utils/i18n/i18n';
 
 // Components
-import Container from '@layout/Container';
 import Stack from '@layout/Stack';
 import ScrollTo from '@ui/ScrollTo';
 import InViewAnimation from '@/components/animations/InViewAnimation';
@@ -21,7 +20,7 @@ function Navigation() {
   const { t } = useTranslation();
   return (
     <InViewAnimation direction="none" margin={'0px'} delay={0.3}>
-      <Container>
+      <div className="container">
         <div className="flex items-center justify-between">
           {/* -- Logo -- */}
           <p className="font-gilory-bold text-xl md:text-3xl">LUX GYM</p>
@@ -41,7 +40,7 @@ function Navigation() {
             <LangSwitcher />
           </Stack>
         </div>
-      </Container>
+      </div>
     </InViewAnimation>
   );
 }

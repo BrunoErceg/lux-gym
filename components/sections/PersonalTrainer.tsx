@@ -10,7 +10,6 @@ import PrivatniTrenerSlika from '@images/privatni-trener.jpg';
 
 // Components
 import Section from '@layout/Section';
-import Container from '@layout/Container';
 import Columns from '@layout/Columns';
 import Accordion from '@ui/Accordion';
 import InfoCard from '@ui/InfoCard';
@@ -31,7 +30,7 @@ function PersonalTrainer() {
 
   return (
     <Section padding="lg" id="personalTrainer">
-      <Container>
+      <div className="container">
         <Columns sm={1} md={1} lg={2} gap="md">
           <div className="flex flex-col justify-center">
             <Typography variant="support">Luka Škubonja</Typography>
@@ -71,7 +70,7 @@ function PersonalTrainer() {
             </div>
           </InViewAnimation>
         </Columns>
-      </Container>
+      </div>
     </Section>
   );
 }

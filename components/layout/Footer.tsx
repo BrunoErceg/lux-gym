@@ -6,7 +6,6 @@ import { SOCIAL_LINKS, INFO } from '@utils/constants';
 
 // Components
 import Columns from '@layout/Columns';
-import Container from '@layout/Container';
 import Stack from '@layout/Stack';
 import Link from '@ui/Link';
 import Heading from '@ui/Heading';
@@ -21,7 +20,7 @@ function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="text-light-dark bg-[#141414] pt-16 text-lg">
-      <Container>
+      <div className="container">
         <Columns sm={1} md={2} lg={4} gap="lg">
           <div>
             <p className="font-gilory-bold mb-4 text-2xl text-white md:text-4xl">LUX GYM</p>
@@ -60,7 +59,7 @@ function Footer() {
             <Typography variant="footer">{t('footer.openingHours.description')}</Typography>
           </div>
         </Columns>
-      </Container>
+      </div>
 
       <div className="mt-18 bg-[#1c1c1c] py-4">
         <Typography variant="copyright">

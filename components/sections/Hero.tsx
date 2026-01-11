@@ -18,7 +18,6 @@ import { SOCIAL_LINKS } from '@/utils/constants';
 // Components
 import Stack from '@layout/Stack';
 import Navigation from '@layout/Navigation';
-import Container from '@layout/Container';
 import OutlineText from '@ui/OutlineText';
 import ArrowDown from '@ui/ArrowDown';
 import NavIcon from '@ui/NavIcon';
@@ -50,7 +49,7 @@ function Hero() {
       />
       <Navigation />
 
-      <Container>
+      <div className="container">
         <InViewAnimation delay={0.4}>
           <Heading level={1} className="mt-15">
             <Trans i18nKey="hero.title">
@@ -66,9 +65,9 @@ function Hero() {
             </Trans>
           </Typography>
         </InViewAnimation>
-      </Container>
+      </div>
 
-      <Container>
+      <div className="container">
         <InViewAnimation delay={0.9} direction="none">
           <div className="flex items-end justify-between">
             <Stack>
@@ -79,7 +78,7 @@ function Hero() {
             <ArrowDown sectionRef={sectionRef} />
           </div>
         </InViewAnimation>
-      </Container>
+      </div>
     </section>
   );
 }

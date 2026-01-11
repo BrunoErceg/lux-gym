@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 // Components
 import Section from '@layout/Section';
-import Container from '@layout/Container';
 import TextGroup from '@layout/TextGroup';
 import Columns from '@layout/Columns';
 import Usluga from '@ui/Usluga';
@@ -50,7 +49,7 @@ function PriceList() {
   const { t } = useTranslation();
   return (
     <Section id="priceList">
-      <Container>
+      <div className="container">
         <TextGroup centered={true}>
           <Typography variant="support">{t('priceList.subtitle')}</Typography>
           <Heading level={2} className="mb-20 translate-x-0.5 md:text-center">
@@ -79,7 +78,7 @@ function PriceList() {
             ))}
           </div>
         </Columns>
-      </Container>
+      </div>
     </Section>
   );
 }
