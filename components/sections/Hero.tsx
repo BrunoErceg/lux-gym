@@ -1,20 +1,27 @@
 "use client";
-import { faGoogle, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { Trans, useTranslation } from "react-i18next";
+
+// React
 import { RefContext } from "@context/context";
 import { useContext, useEffect, useState } from "react";
-import background from "@images/teretana-privatni-trening.jpg";
 import Image from "next/image";
+// i18
+import { Trans, useTranslation } from "react-i18next";
+
+// Icons & images
+import { faGoogle, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import background from "@images/teretana-privatni-trening.jpg";
+
+// Constants
+import { SOCIAL_LINKS } from "@/utils/constants";
+// Components
+import Stack from "@layout/Stack";
+import Navigation from "@layout/Navigation";
 import Container from "@layout/Container";
 import Flex from "@layout/Flex";
 import OutlineText from "@ui/OutlineText";
 import ArrowDown from "@ui/ArrowDown";
+import NavIcon from "@ui/NavIcon";
 import InViewAnimation from "@/components/animations/InViewAnimation";
-import Navigation from "@layout/Navigation";
-import HeroLayout from "../layout/HeroLayout";
-import NavIcon from "../ui/NavIcon";
-import { SOCIAL_LINKS } from "@/utils/constants";
-import Stack from "../layout/Stack";
 
 function Hero() {
   const sectionRef = useContext(RefContext);
@@ -25,7 +32,7 @@ function Hero() {
   }, []);
 
   return (
-    <HeroLayout>
+    <section className="text-light relative flex h-170 md:h-screen w-screen flex-col justify-between py-8 overflow-hidden">
       <Image alt={t("hero.imageAlt")} src={background.src} fill sizes="90vw" className="object-cover relative z-[-1]" />
       <Navigation />
 
@@ -58,7 +65,7 @@ function Hero() {
           </Flex>{" "}
         </InViewAnimation>
       </Container>
-    </HeroLayout>
+    </section>
   );
 }
 
