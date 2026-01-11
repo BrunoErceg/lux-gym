@@ -1,17 +1,12 @@
-import { cn } from "@utils/cn";
+import { cn } from '@utils/cn';
+import { HTMLAttributes } from 'react';
 
-type TextGroupProps = {
+type TextGroupProps = HTMLAttributes<HTMLDivElement> & {
   centered?: true | false;
-  children: React.ReactNode;
-  className?: string;
 };
 
 function TextGroup({ centered = false, children, className }: TextGroupProps) {
-  return (
-    <div className={cn(centered == true ? "text-center" : "", className)}>
-      {children}
-    </div>
-  );
+  return <div className={cn(centered == true ? 'text-center' : '', className)}>{children}</div>;
 }
 
 export default TextGroup;
