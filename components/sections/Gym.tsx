@@ -6,8 +6,7 @@ import { useTranslations } from 'next-intl';
 import { AnimateIn } from '@brunoerceg/animate-in';
 
 // Icons & Images
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import heart from '@icons/heart.svg';
 import Vrijeme from '@icons/vrijeme.svg';
 import Oprema from '@icons/oprema.svg';
 import Organizacija from '@icons/organizacija.svg';
@@ -20,6 +19,7 @@ import Columns from '@layout/Columns';
 import Card from '@ui/Card';
 import Heading from '@ui/Heading';
 import Typography from '@ui/Typography';
+import Image from 'next/image';
 
 const GYM_FEATURES = [
   {
@@ -51,30 +51,39 @@ function Gym() {
 
   return (
     <Section padding="lg" id="gym">
-      <div className="container">
+      <AnimateIn.Container stagger="medium" amount="some" className="container">
         <TextGroup>
-          <Typography variant="support" className="text-center md:text-left">
-            {t('subtitle')}
-          </Typography>
+          <AnimateIn.Item>
+            <Typography variant="support" className="text-center md:text-left">
+              {t('subtitle')}
+            </Typography>
+          </AnimateIn.Item>
 
-          <Heading level={2}>
-            {t('title')} <FontAwesomeIcon icon={faHeart} className="text-primary size-7" />
-          </Heading>
+          <AnimateIn.Item>
+            <Heading level={2}>
+              {t('title')}{' '}
+              <Image
+                src={heart}
+                width={37}
+                height={37}
+                alt="Heart"
+                className="animate-heartbeat ml-1 inline -translate-y-1"
+              />
+            </Heading>
+          </AnimateIn.Item>
         </TextGroup>
-        <AnimateIn.Container stagger="medium">
-          <Columns sm={1} md={2} lg={4} gap="lg">
-            {GYM_FEATURES.map(({ key, icon }) => (
-              <AnimateIn.Item key={key}>
-                <Card
-                  title={t(`${key}.title`)}
-                  description={t(`${key}.description`)}
-                  icon={icon.src}
-                />
-              </AnimateIn.Item>
-            ))}
-          </Columns>{' '}
-        </AnimateIn.Container>
-      </div>
+        <Columns sm={1} md={2} lg={4} gap="lg">
+          {GYM_FEATURES.map(({ key, icon }) => (
+            <AnimateIn.Item key={key}>
+              <Card
+                title={t(`${key}.title`)}
+                description={t(`${key}.description`)}
+                icon={icon.src}
+              />
+            </AnimateIn.Item>
+          ))}
+        </Columns>{' '}
+      </AnimateIn.Container>
     </Section>
   );
 }

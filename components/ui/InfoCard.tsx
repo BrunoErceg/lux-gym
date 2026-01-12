@@ -29,7 +29,7 @@ function InfoCard({
 }: InfoCardProps) {
   return (
     <div
-      className={cn('text-light bg-dark w-full flex-col items-center p-4 md:p-6', className)}
+      className={cn('bg-dark w-full flex-col items-center p-4 text-white md:p-6', className)}
       {...props}
     >
       <h4 className="m-0 text-left">{title}</h4>
