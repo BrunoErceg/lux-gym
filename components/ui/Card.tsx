@@ -5,7 +5,7 @@ import { HTMLAttributes } from 'react';
 import { cn } from '@/utils/cn';
 
 type CardProps = HTMLAttributes<HTMLDivElement> & {
-  title?: string;
+  title: string;
   description?: string;
   icon: string;
 };
@@ -24,7 +24,7 @@ function Card({ title, description, icon, className, ...props }: CardProps) {
         src={icon}
         width={94}
         height={94}
-        alt=""
+        alt={title}
         className="mx-auto size-18 md:mx-0 md:size-24"
       />
       <Heading level={3}>{title}</Heading>

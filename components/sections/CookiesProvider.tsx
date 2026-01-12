@@ -2,7 +2,7 @@
 import { CookieManager } from 'react-cookie-manager';
 import { useTranslations } from 'next-intl';
 function CookiesProvider({ children }: { children: React.ReactNode }) {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('cookies');
   return (
     <CookieManager
       cookieKitId="68f0e4971bbc36d40feb9dfe"
@@ -13,10 +13,10 @@ function CookiesProvider({ children }: { children: React.ReactNode }) {
         declineButton: 'cookie-button',
       }}
       translations={{
-        title: t('cookies.title'),
-        message: t('cookies.description'),
-        buttonText: t('cookies.accept'),
-        declineButtonText: t('cookies.reject'),
+        title: t('title'),
+        message: t('description'),
+        buttonText: t('accept'),
+        declineButtonText: t('reject'),
       }}
       showManageButton={false}
       displayType="popup"

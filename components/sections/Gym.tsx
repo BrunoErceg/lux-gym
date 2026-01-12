@@ -47,18 +47,18 @@ const GYM_FEATURES = [
  */
 
 function Gym() {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('gym');
 
   return (
     <Section padding="lg" id="gym">
       <div className="container">
         <TextGroup>
           <Typography variant="support" className="text-center md:text-left">
-            {t('gym.subtitle')}
+            {t('subtitle')}
           </Typography>
 
           <Heading level={2}>
-            {t('gym.title')} <FontAwesomeIcon icon={faHeart} className="text-primary size-7" />
+            {t('title')} <FontAwesomeIcon icon={faHeart} className="text-primary size-7" />
           </Heading>
         </TextGroup>
         <AnimateIn.Container stagger="medium">
@@ -66,8 +66,8 @@ function Gym() {
             {GYM_FEATURES.map(({ key, icon }) => (
               <AnimateIn.Item key={key}>
                 <Card
-                  title={t(`gym.${key}.title`)}
-                  description={t(`gym.${key}.description`)}
+                  title={t(`${key}.title`)}
+                  description={t(`${key}.description`)}
                   icon={icon.src}
                 />
               </AnimateIn.Item>

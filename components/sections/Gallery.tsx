@@ -61,18 +61,13 @@ const IMAGES = [
  * a div containing GalleryImg components.
  */
 function Gallery() {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('gallery');
   return (
     <Section padding="none" id="gallery">
       <PhotoProvider>
         <div className="grid min-h-screen w-full grid-cols-2 gap-1 pt-12 lg:grid-cols-5">
           {IMAGES.map(({ image, alt, className }) => (
-            <GalleryImg
-              image={image}
-              key={alt}
-              className={className || ''}
-              alt={t(`gallery.${alt}`)}
-            />
+            <GalleryImg image={image} key={alt} className={className || ''} alt={t(alt)} />
           ))}
         </div>
       </PhotoProvider>

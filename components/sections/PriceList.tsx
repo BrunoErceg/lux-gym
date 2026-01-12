@@ -48,16 +48,16 @@ const SERVICES = [
  * @returns Section component with information about the prices of services.
  */
 function PriceList() {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('priceList');
   return (
     <Section id="priceList">
       <AnimateIn.Container className="container">
         <TextGroup centered={true}>
           <AnimateIn.Item>
-            <Typography variant="support">{t('priceList.subtitle')}</Typography>
+            <Typography variant="support">{t('subtitle')}</Typography>
           </AnimateIn.Item>
           <Heading level={2} className="mb-20 translate-x-0.5 md:text-center">
-            <AnimateIn.Words>{t('priceList.title')}</AnimateIn.Words>
+            <AnimateIn.Words>{t('title')}</AnimateIn.Words>
           </Heading>
         </TextGroup>
         <AnimateIn.Item>
@@ -66,8 +66,8 @@ function PriceList() {
               {SERVICES.slice(0, 4).map(({ service, price }) => (
                 <PriceListItem
                   key={service}
-                  usluga={t(`priceList.${service}.title`)}
-                  opis={t(`priceList.${service}.description`)}
+                  usluga={t(`${service}.title`)}
+                  opis={t(`${service}.description`)}
                   cijena={price}
                 />
               ))}
@@ -76,8 +76,8 @@ function PriceList() {
               {SERVICES.slice(4).map(({ service, price }) => (
                 <PriceListItem
                   key={service}
-                  usluga={t(`priceList.${service}.title`)}
-                  opis={t(`priceList.${service}.description`)}
+                  usluga={t(`${service}.title`)}
+                  opis={t(`${service}.description`)}
                   cijena={price}
                 />
               ))}

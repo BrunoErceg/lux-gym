@@ -33,6 +33,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <CookiesProvider>
             <main>{children}</main>
+            <Footer />
           </CookiesProvider>
         </NextIntlClientProvider>
       </body>

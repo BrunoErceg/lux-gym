@@ -15,7 +15,7 @@ const SECTIONS = ['gym', 'personalTrainer', 'gallery', 'priceList'];
  * @returns  A JSX element representing the navigation bar.
  */
 function Navigation() {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('navigation');
   return (
     <nav className="container">
       <div className="flex items-center justify-between">
@@ -32,7 +32,7 @@ function Navigation() {
               href={`#${section}`}
               className="underline-animation relative text-xl"
             >
-              {t(`navigation.${section}`)}
+              {t(section)}
             </Link>
           ))}
         </Stack>

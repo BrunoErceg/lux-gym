@@ -18,7 +18,7 @@ import Typography from '@ui/Typography';
  * @returns  A JSX element representing the footer section.
  */
 function Footer() {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('footer');
   return (
     <footer className="text-light-dark bg-[#141414] pt-16 text-lg">
       <div className="container">
@@ -26,18 +26,18 @@ function Footer() {
           <div>
             <p className="font-gilory-bold mb-4 text-2xl text-white md:text-4xl">LUX GYM</p>
             <Typography variant="footer">
-              {t('footer.learnMore')} <br />
+              {t('learnMore')} <br />
               <Link link={SOCIAL_LINKS.sibenikIn}>Šibenik in</Link>
             </Typography>
           </div>
 
           <div>
             <Heading level={4} footer>
-              {t('footer.contact')}
+              {t('contact')}
             </Heading>
             <Stack direction="col" gap="sm">
               <Typography variant="footer">
-                {t('footer.number')}
+                {t('number')}
                 <Link link={SOCIAL_LINKS.whatsapp}>{INFO.phone}</Link>
               </Typography>
               <Typography variant="footer">Email: {INFO.email}</Typography>
@@ -48,23 +48,23 @@ function Footer() {
           </div>
           <div>
             <Heading level={4} footer>
-              {t('footer.address')}
+              {t('address')}
             </Heading>
 
             <Link link={SOCIAL_LINKS.google}>{INFO.address}</Link>
           </div>
           <div>
             <Heading level={4} footer>
-              {t('footer.openingHours.title')}
+              {t('openingHours.title')}
             </Heading>
-            <Typography variant="footer">{t('footer.openingHours.description')}</Typography>
+            <Typography variant="footer">{t('openingHours.description')}</Typography>
           </div>
         </Columns>
       </div>
 
       <div className="mt-18 bg-[#1c1c1c] py-4">
         <Typography variant="copyright">
-          LuxGym © {new Date().getFullYear() + '. ' + t('footer.rights')}
+          LuxGym © {new Date().getFullYear() + '. ' + t('rights')}
         </Typography>
       </div>
     </footer>

@@ -1,5 +1,151 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "navigation": {
+    "gym": "Gym",
+    "personalTrainer": "Personal Trainer",
+    "gallery": "Gallery",
+    "priceList": "Price List"
+  },
+
+  "cookies": {
+    "title": "Do you want a cookie?",
+    "description": "We value your privacy. Essential cookies are always enabled because they are necessary for the website to function properly.",
+    "accept": "Accept all",
+    "reject": "Reject all"
+  },
+
+  "hero": {
+    "imageAlt": "A personal trainer demonstrates an exercise",
+    "title": "Zone of  <OutlineText>strength</OutlineText><lineBreak></lineBreak> and energy",
+    "description": "Your <underline>favorite</underline> gym in Šibenik",
+    "workingHours": "Mon-Sun 07-22h"
+  },
+
+  "gym": {
+    "subtitle": "GYM INFORMATION",
+    "title": "Your Favorite Gym",
+
+    "openingHours": {
+      "title": "Opening Hours",
+      "description": "The gym is open Monday through Sunday, 7 a.m. to 10 p.m."
+    },
+    "equipment": {
+      "title": "Top Equipment",
+      "description": "Our equipment has been carefully selected to make your workout effective"
+    },
+    "capacity": {
+      "title": "MultiSport",
+      "description": "Access to the largest network of diverse sports facilities. Fully digital, easy to use"
+    },
+    "atmosphere": {
+      "title": "Nice Atmosphere",
+      "description": "Enjoy your workout in a peaceful environment where you can fully focus"
+    }
+  },
+
+  "hashtags": {
+    "gym": "Gym",
+    "new": "new",
+    "yoga": "yoga",
+    "energy": "energy",
+    "strength": "strength",
+    "activity": "activity",
+    "cardio": "cardio",
+    "running": "running"
+  },
+
+  "personalTrainer": {
+    "title": "Your Personal Trainer",
+    "imgAlt": "Personal Trainer Luka Škubonja",
+    "training": {
+      "title": "One on one training",
+      "description": "Fully personalized training tailored to your goals, without waiting or compromise. The perfect balance of attention and results."
+    },
+    "advice": {
+      "title": "Advice and support",
+      "description": "You get support at all times, not only during training, but also through useful advice for everyday habits."
+    },
+    "nutrition": {
+      "title": "Nutrition tips",
+      "description": "Get a simple and tasty nutrition plan tailored to your needs that will turn training fuel into results."
+    },
+    "group": {
+      "title": "2 on 1 Training",
+      "description": "Enjoy dynamic training sessions with a partner. Share the path to results and save money, driven by collective energy and the guidance of a trainer."
+    },
+
+    "experience": {
+      "title": "Experience",
+      "description": "Years as a Trainer"
+    },
+
+    "clients": {
+      "title": "Clients",
+      "description": "Satisfied Clients"
+    }
+  },
+  "gallery": {
+    "bikeImgAlt": "Cardio on a bike",
+    "gymImgAlt": "Gym interior",
+    "personalTrainerImgAlt": "Personal trainer supervises lat pulldown",
+    "latpulldownImgAlt": "Personal trainer demonstrates lat pulldown",
+    "receptionImgAlt": "Gym membership",
+    "lockerRoomImgAlt": "Locker room",
+    "gymRoomImgAlt": "Gym space"
+  },
+
+  "priceList": {
+    "title": "All Services and Prices",
+    "subtitle": "PRICE LIST",
+
+    "membership": {
+      "title": "Monthly Membership",
+      "description": "Unlimited gym access for the entire month, no hidden costs."
+    },
+
+    "familyMembership": {
+      "title": "Family Membership per Member",
+      "description": "A better price for each member of your family. Save while you all work out together."
+    },
+
+    "weekMembership": {
+      "title": "1 Week Membership",
+      "description": "Ideal for guests or for a trial period. Experience all the benefits of our membership."
+    },
+
+    "workout": {
+      "title": "Gym 1 Workout",
+      "description": "Individual entry with no obligation. Perfect for those who like flexibility."
+    },
+
+    "privateWorkout": {
+      "title": "Private Workout 1 hour",
+      "description": "An hour of time completely dedicated to you and your goals with a personal trainer."
+    },
+
+    "workoutsPacket": {
+      "title": "12 Private Workouts Package + Membership",
+      "description": "The best package for maximum results. A combination of personal care and unlimited access."
+    },
+
+    "workoutsPacketFor2": {
+      "title": "12 Private Workouts Package + Membership / for 2 People",
+      "description": "Ideal for couples or friends. Share the path to results and save."
+    }
+  },
+
+  "footer": {
+    "learnMore": "Learn more about us in the article",
+    "contact": "Contact",
+    "number": "Number:",
+    "address": "Address",
+    "openingHours": {
+      "title": "Working Time",
+      "description": "Monday through Sunday, 7 a.m. to 10 p.m."
+    },
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not Found",
+    "link": "Go Back!"
   }
 }

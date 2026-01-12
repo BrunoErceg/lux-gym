@@ -20,7 +20,6 @@ import Stack from '@layout/Stack';
 import Navigation from '@layout/Navigation';
 import OutlineText from '@ui/OutlineText';
 import NavIcon from '@ui/NavIcon';
-import InViewAnimation from '@/components/animations/InViewAnimation';
 import Heading from '@ui/Heading';
 import Typography from '@ui/Typography';
 
@@ -30,12 +29,12 @@ import Typography from '@ui/Typography';
  * @returns Hero component.
  */
 function Hero() {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('hero');
 
   return (
     <section className="text-light relative flex h-170 w-screen flex-col justify-between overflow-hidden py-8 md:h-screen">
       <Image
-        alt={t('hero.imageAlt')}
+        alt={t('imageAlt')}
         src={background.src}
         fill
         sizes="90vw"
@@ -47,12 +46,17 @@ function Hero() {
       <div className="container">
         <AnimateIn.Individual delay={0.1}>
           <Heading level={1} className="mt-15">
-            Tvoja zona snage i <OutlineText>energije</OutlineText>
+            {t.rich('title', {
+              lineBreak: () => <br />,
+              OutlineText: (chunks) => <OutlineText>{chunks}</OutlineText>,
+            })}
           </Heading>
         </AnimateIn.Individual>
         <AnimateIn.Individual delay={0.2}>
           <Typography variant="subheading">
-            Vaša <span className="decoration-primary underline">omiljena</span> teretana u Šibeniku
+            {t.rich('description', {
+              underline: (chunks) => <span className="decoration-primary underline">{chunks}</span>,
+            })}
           </Typography>
         </AnimateIn.Individual>
       </div>

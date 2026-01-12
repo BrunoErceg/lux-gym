@@ -27,7 +27,7 @@ const SERVICES = ['training', 'advice', 'nutrition', 'group'];
  */
 function PersonalTrainer() {
   const { godineIskustva, brojKlijenata } = getExperience();
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('personalTrainer');
 
   return (
     <Section padding="lg" id="personalTrainer">
@@ -38,14 +38,14 @@ function PersonalTrainer() {
               <Typography variant="support">Luka Škubonja</Typography>
             </AnimateIn.Item>
             <Heading level={2} className="-translate-x-0.5">
-              <AnimateIn.Words from="bottom">{t('personalTrainer.title')}</AnimateIn.Words>
+              <AnimateIn.Words from="bottom">{t('title')}</AnimateIn.Words>
             </Heading>
             <AnimateIn.Item delay={0.3}>
               {SERVICES.map((service) => (
                 <Accordion
                   key={service}
-                  title={t(`personalTrainer.${service}.title`)}
-                  content={t(`personalTrainer.${service}.description`)}
+                  title={t(`${service}.title`)}
+                  content={t(`${service}.description`)}
                 />
               ))}
             </AnimateIn.Item>
@@ -56,19 +56,19 @@ function PersonalTrainer() {
                 src={PrivatniTrenerSlika}
                 width={472}
                 height={611}
-                alt={t('personalTrainer.imgAlt')}
+                alt={t('imgAlt')}
                 className="w-full"
               />
               <div className="absolute bottom-0 flex w-full space-x-5 lg:right-10 lg:bottom-10">
                 <InfoCard
-                  title={t('personalTrainer.experience.title')}
+                  title={t('experience.title')}
                   countTo={godineIskustva}
-                  description={t('personalTrainer.experience.description')}
+                  description={t('experience.description')}
                 />
                 <InfoCard
-                  title={t('personalTrainer.clients.title')}
+                  title={t('clients.title')}
                   countTo={brojKlijenata}
-                  description={t('personalTrainer.clients.description')}
+                  description={t('clients.description')}
                   className="bg-primary"
                 />
               </div>

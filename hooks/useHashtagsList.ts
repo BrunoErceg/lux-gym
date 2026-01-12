@@ -9,23 +9,23 @@ import { useState, useEffect } from 'react';
  * @returns  A list of shuffled hashtags.
  */
 export default function useHashtagsList() {
-  const t = useTranslations('ImeSekcije');
+  const t = useTranslations('hashtags');
   const [shuffledHashtags, setShuffledHashtags] = useState<string[]>([]);
 
   const currentYear = new Date().getFullYear().toString();
   const hashtags = [
     currentYear,
     'Šibenik',
-    t('hashtags.gym'),
+    t('gym'),
     'fitness',
     'legday',
-    t('hashtags.new'),
-    t('hashtags.yoga'),
-    t('hashtags.energy'),
-    t('hashtags.strength'),
-    t('hashtags.activity'),
-    t('hashtags.cardio'),
-    t('hashtags.running'),
+    t('new'),
+    t('yoga'),
+    t('energy'),
+    t('strength'),
+    t('activity'),
+    t('cardio'),
+    t('running'),
   ];
 
   useEffect(() => {

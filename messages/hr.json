@@ -1,9 +1,153 @@
 {
-  "HomePage": {
-    "title": "Halo Svijete!"
+  "navigation": {
+    "gym": "Teretana",
+    "personalTrainer": "Privatni Trener",
+    "gallery": "Galerija",
+    "priceList": "Cjenik"
   },
-  "ImeSekcije": {
-    "cookies.title": "Kolačići",
-    "cookies.description": "Kolačići su potrebni da Vaš preglednik pruža najbolje iskustvo. Nastavite koristeći našu stranicu."
+
+  "cookies": {
+    "title": "Želite li kolačić?",
+    "description": "Cijenimo vašu privatnost. Osnovni kolačići su uvijek omogućeni jer su neophodni za pravilno funkcioniranje web stranice.",
+    "accept": "Prihvati sve",
+    "reject": "Odbij sve"
+  },
+
+  "hero": {
+    "imageAlt": "Privatni trener pokazuje vježbu",
+    "title": "Tvoja zona <lineBreak></lineBreak> snage  i <OutlineText>energije</OutlineText>",
+    "description": "Vaša <underline>omiljena</underline> teretana u Šibeniku",
+    "workingHours": "Pon-Ned 07-22h"
+  },
+
+  "gym": {
+    "subtitle": "INFO O TERETANI",
+    "title": "Vaša Omiljena Teretana",
+
+    "openingHours": {
+      "title": "Radno Vrijeme",
+      "description": "Teretana je otvorena od ponedjeljka do nedjelje, od 07 do 22 sata"
+    },
+    "equipment": {
+      "title": "Vrhunska Oprema",
+      "description": "Naša oprema je odabrana s pažnjom kako bi tvoj trening bio učinkovit"
+    },
+    "capacity": {
+      "title": "MultiSport",
+      "description": "Pristup najvećoj mreži raznolikih sportskih objekata. Potpuno digitalno, jednostavno za korištenje"
+    },
+    "atmosphere": {
+      "title": "Ugodna Atmosfera",
+      "description": "Uživaj u vježbanju u mirnom okruženju gdje se možeš u potpunosti fokusirati na sebe"
+    }
+  },
+
+  "hashtags": {
+    "gym": "Gym",
+    "new": "novo",
+    "yoga": "joga",
+    "energy": "energija",
+    "strength": "snaga",
+    "activity": "aktivnost",
+    "cardio": "kardio",
+    "running": "trčanje"
+  },
+
+  "personalTrainer": {
+    "title": "Vaš Privatni Trener",
+    "imgAlt": "Privatni Trener Luka Škubonja",
+    "training": {
+      "title": "Jedan na jedan treninzi",
+      "description": "Potpuno personalizirani treninzi prilagođeni tvojim ciljevima, bez čekanja i kompromisa. Savršen odnos pažnje i rezultata."
+    },
+    "advice": {
+      "title": "Savjeti i podrška",
+      "description": "Dobijete potporu u svakom trenutku, ne samo tijekom treninga, već i kroz korisne savjete za svakodnevne navike."
+    },
+    "nutrition": {
+      "title": "Savjeti za ishranu",
+      "description": "Dobijte jednostavan i ukusan plan prehrane prilagođen vašim potrebama koji će gorivo za trening pretvoriti u rezultate."
+    },
+    "group": {
+      "title": "2 na 1 treninzi",
+      "description": "Uživajte u dinamičnim treninzima u paru. Podijelite put do rezultata i uštedite, potaknuti kolektivnom energijom i vodstvom trenera."
+    },
+
+    "experience": {
+      "title": "Iskustvo",
+      "description": "Godina kao Trener"
+    },
+
+    "clients": {
+      "title": "Klijenti",
+      "description": "Zadovoljnih Klijenta"
+    }
+  },
+
+  "gallery": {
+    "bikeImgAlt": "Kardio na bicikli",
+    "gymImgAlt": "Unutarnji prostor teretane",
+    "personalTrainerImgAlt": "Privatni trener nadgleda vježbanje lat pulldowna",
+    "latpulldownImgAlt": "Privatni trener pokazuje lat pulldown",
+    "receptionImgAlt": "Učlanjivanje u teretanu",
+    "lockerRoomImgAlt": "Svlačionica",
+    "gymRoomImgAlt": "Prostor teretane"
+  },
+
+  "priceList": {
+    "title": "Sve Usluge i Cijene",
+    "subtitle": "CJENIK",
+
+    "membership": {
+      "title": "Mjesečna Članarina",
+      "description": "Neograničen pristup teretani za cijeli mjesec, bez skrivenih troškova."
+    },
+
+    "familyMembership": {
+      "title": "Obiteljska Članarina po Članu",
+      "description": "Povoljnija cijena za svakog člana vaše obitelji. Uštedite dok svi zajedno vježbate."
+    },
+
+    "weekMembership": {
+      "title": "Članarina 1 Tjedan",
+      "description": "Idealno za goste ili za probni period. Iskusite sve prednosti našeg članstva."
+    },
+
+    "workout": {
+      "title": "Teretana 1 Trening",
+      "description": "Pojedinačan ulazak bez obaveza. Savršen za one koji vole fleksibilnost."
+    },
+
+    "privateWorkout": {
+      "title": "Privatni Trening 1 sat",
+      "description": "Sat vremena potpuno posvećen vama i vašim ciljevima s osobnim trenerom."
+    },
+
+    "workoutsPacket": {
+      "title": "Paket 12 Privatnih Treninga + Članarina",
+      "description": "Najbolji paket za maksimalne rezultate. Kombinacija osobne brige i neograničenog pristupa."
+    },
+
+    "workoutsPacketFor2": {
+      "title": "Paket 12 Privatnih Treninga + Članarina / za 2 Osobe",
+      "description": "Idealno za parove ili prijatelje. Podijelite put do rezultata i uštedite."
+    }
+  },
+
+  "footer": {
+    "learnMore": "Saznajte više o nama u članku",
+    "contact": "Kontakt",
+    "number": "Broj:",
+    "address": "Adresa",
+    "openingHours": {
+      "title": "Radno Vrijeme",
+      "description": "Od ponedjeljka do nedjelje, od 07 do 22 sata"
+    },
+    "rights": "Sva prava pridržana."
+  },
+
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "link": "Idi nazad!"
   }
 }
