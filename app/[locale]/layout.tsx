@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('description'),
     keywords: t('keywords'),
     icons: {
-      icon: '/favicon.ico',
+      icon: '/icon.png',
     },
     verification: {
       google: 'ZFU2Ig87LnpOnn7gOsOQeAmI8wU9eYNZ6K9zk1lO64A',
