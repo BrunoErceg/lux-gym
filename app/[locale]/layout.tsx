@@ -20,6 +20,7 @@ import { Analytics } from '@vercel/analytics/next';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
+  const baseUrl = 'https://lux-gym.hr/';
   return {
     title: t('title'),
     description: t('description'),
@@ -29,6 +30,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     verification: {
       google: 'ZFU2Ig87LnpOnn7gOsOQeAmI8wU9eYNZ6K9zk1lO64A',
+    },
+    alternates: {
+      canonical: locale === 'hr' ? baseUrl : `${baseUrl}/en`,
+      languages: {
+        'hr-HR': baseUrl,
+        'en-US': `${baseUrl}/en`,
+        'x-default': baseUrl,
+      },
     },
   };
 }
