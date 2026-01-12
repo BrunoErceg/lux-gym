@@ -14,6 +14,7 @@
     url('@styles/fonts/Gilroy-Bold.woff') format('woff'),
     url('@styles/fonts/Gilroy-Bold.woff2') format('woff2');
   font-weight: bold;
+  font-display: swap;
   font-style: normal;
 }
 
