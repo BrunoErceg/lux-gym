@@ -1,20 +1,23 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import '../globals.css';
 import Footer from '@/components/layout/Footer';
 import CookiesProvider from '@/components/sections/CookiesProvider';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
-export const metadata: Metadata = {
-  title: 'Lux Gym - Vaša omiljena Teretana u Šibeniku',
-  description: 'Tvoja zona snage i energije',
-  keywords: 'Gym,Teratana,Šibenik,Fitnes,Trening,Privatni Trener',
-  icons: {
-    icon: '/favicon.ico',
-  },
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata' });
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+    icons: {
+      icon: '/favicon.ico',
+    },
+  };
+}
 export default async function RootLayout({
   children,
   params,
@@ -26,10 +29,10 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  // Dohvati poruke na serveru
+
   return (
     <html lang={locale}>
-      <body className={`antialiased`}>
+      <body>
         <NextIntlClientProvider>
           <CookiesProvider>
             <main>{children}</main>

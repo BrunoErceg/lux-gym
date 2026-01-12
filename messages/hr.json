@@ -1,4 +1,10 @@
 {
+  "Metadata": {
+    "title": "Lux Gym - Vaša omiljena Teretana u Šibeniku",
+    "description": "Tvoja zona snage i energije",
+    "keywords": "Gym,Teretana,Šibenik,Fitness,Trening,Privatni Trener"
+  },
+
   "navigation": {
     "gym": "Teretana",
     "personalTrainer": "Privatni Trener",
@@ -44,13 +50,13 @@
 
   "hashtags": {
     "gym": "Gym",
-    "new": "novo",
-    "yoga": "joga",
-    "energy": "energija",
-    "strength": "snaga",
-    "activity": "aktivnost",
-    "cardio": "kardio",
-    "running": "trčanje"
+    "new": "Novo",
+    "yoga": "Joga",
+    "energy": "Energija",
+    "strength": "Snaga",
+    "activity": "Aktivnost",
+    "cardio": "Kardio",
+    "running": "Trčanje"
   },
 
   "personalTrainer": {

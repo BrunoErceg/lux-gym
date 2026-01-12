@@ -1,4 +1,9 @@
 {
+  "metadata": {
+    "title": "Lux Gym - Your favorite gym in Šibenik",
+    "description": "Your zone of strength and energy",
+    "keywords": "Gym,Šibenik,Fitness,Training,Private Trainer"
+  },
   "navigation": {
     "gym": "Gym",
     "personalTrainer": "Personal Trainer",
@@ -44,13 +49,13 @@
 
   "hashtags": {
     "gym": "Gym",
-    "new": "new",
-    "yoga": "yoga",
-    "energy": "energy",
-    "strength": "strength",
-    "activity": "activity",
-    "cardio": "cardio",
-    "running": "running"
+    "new": "New",
+    "yoga": "Yoga",
+    "energy": "Energy",
+    "strength": "Strength",
+    "activity": "Activity",
+    "cardio": "Cardio",
+    "running": "Running"
   },
 
   "personalTrainer": {
